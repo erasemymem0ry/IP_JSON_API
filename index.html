@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр альбомов</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="app">
+        <header>
+            <h1>Просмотр альбомов</h1>
+        </header>
+
+        <section class="album-picker">
+            <label for="album-selector">Выберите альбом:</label>
+            <select id="album-selector">
+                <option value="">Загрузка списка...</option>
+            </select>
+        </section>
+
+        <div id="loading-indicator" class="is-hidden">Пожалуйста, подождите...</div>
+        <div id="error-message" class="is-hidden"></div>
+
+        <section id="author-section" class="is-hidden">
+            <h2>Информация об авторе</h2>
+            <div class="author-details"></div>
+        </section>
+
+        <section id="gallery-section" class="is-hidden">
+            <h2>Фотографии альбома</h2>
+            <div id="photo-gallery" class="gallery-grid"></div>
+        </section>
+    </main>
+</body>
+</html>
